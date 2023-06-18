@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap");
+.bg {
+  background-color: #002347;
+}
+
+p {
+  line-height: 25px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+i {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul,
+li,
+a,
+p,
+span {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7b838a;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#manu:hover .dropdown-menu {
+  display: block;
+}
+
+header nav {
+  background-color: transparent;
+  z-index: 10000000;
+}
+header nav .navbar-nav {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+header nav .navbar-nav .nav-item {
+  padding: 5px 10px;
+}
+header nav .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #002347 !important;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+header nav .navbar-nav .nav-item .active {
+  color: #fdc632 !important;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+header nav .navbar-nav .nav-item .nav-link:hover {
+  color: #fdc632 !important;
+}
+header nav .navbar-nav .dropdown .dropdown-menu {
+  border-radius: 0px;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  border: 1px solid transparent !important;
+}
+header nav .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px 20px;
+  color: #002347 !important;
+}
+header nav .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #fdc632 !important;
+}
+header nav button {
+  background-color: transparent;
+  border: none;
+}
+header nav button i {
+  padding-left: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #002347;
+}
+
+.banner {
+  margin-top: -80px;
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .btn-1 {
+  border: 1px solid transparent;
+  margin-right: 20px;
+  background-color: #002347;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+.banner .btn-1 a {
+  font-weight: 600;
+  font-size: 13px;
+  color: #fdc632;
+  font-family: "Roboto", sans-serif;
+}
+.banner .btn-1:hover {
+  border-color: #002347;
+  background-color: transparent;
+}
+.banner .btn-1:hover a {
+  color: #002347;
+}
+.banner .btn-2 {
+  margin-right: 20px;
+  background-color: #fdc632;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+.banner .btn-2 a {
+  font-weight: 600;
+  font-size: 13px;
+  color: #002347;
+  font-family: "Roboto", sans-serif;
+}
+.banner .btn-2:hover {
+  background-color: #002347;
+}
+.banner .btn-2:hover a {
+  color: #fdc632;
+}
+
+.banner-1 {
+  background-color: #002347ab;
+  background-blend-mode: darken;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-1 p a {
+  color: white;
+}
+
+.btn-1 {
+  border: 1px solid transparent;
+  background-color: #002347;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+.btn-1 a {
+  font-weight: 600;
+  font-size: 13px;
+  color: #fdc632;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-1:hover {
+  border-color: #002347;
+  background-color: transparent;
+}
+.btn-1:hover a {
+  color: #002347;
+}
+
+.line {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(to right, #d9d9d92d 10%, #e6e6e68e 60%);
+}
+.line .sub-line {
+  width: 13%;
+  height: 2px;
+  background-color: #fdc632;
+}
+
+.Main-section .content-part {
+  overflow: hidden;
+}
+.Main-section .content-part .sub-title {
+  margin-top: 25px;
+  color: #002347;
+}
+.Main-section .content-part .line {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(to right, #d9d9d92d 10%, #e6e6e68e 60%);
+}
+.Main-section .content-part .line .sub-line {
+  width: 13%;
+  height: 2px;
+  background-color: #fdc632;
+}
+.Main-section .content-part ul li {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main-section .content-part ul li p {
+  font-size: 17px;
+}
+.Main-section .content-part ul li a {
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+  font-family: "Rubik", sans-serif;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-weight: 450;
+  text-transform: uppercase;
+}
+.Main-section .content-part ul li a:hover {
+  color: white;
+  background-color: #fdc632;
+}
+.Main-section .side_bar ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.Main-section .side_bar ul li .star {
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 100px 0px;
+  background-color: #002347;
+}
+footer ul li a {
+  display: block;
+  color: #7b838a;
+  padding: 10px 0px;
+}
+footer ul li a:hover {
+  color: #fdc632;
+}
+footer form .form-control,
+footer form .input-group-text {
+  border-radius: 0px;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  background-color: #ffffff21;
+  border: none;
+  font-weight: 600;
+}
+footer form .input-group-text {
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  text-transform: uppercase;
+  background-color: #fdc632 !important;
+}
+footer form .form-control::placeholder {
+  font-size: 13px;
+}
+footer .social {
+  margin-top: -30px;
+}
+footer .social .icon .item {
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+  padding: 10px;
+  background-color: #fdc632;
+}
+footer .social .icon .item i {
+  cursor: pointer;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+footer .social .icon .item:hover {
+  background-color: white;
+}
+footer .social .icon .item:hover i {
+  color: #fdc632;
+}

@@ -1,0 +1,572 @@
+// ===========================================================
+//              Common Css
+// ===========================================================
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+
+// CSS rules to specify families
+
+//     font-family: 'Roboto', sans-serif;
+
+//     font-family: 'Rubik', sans-serif;
+$primery: #002347;
+$secondray: #fdc632;
+$text: #7b838a;
+
+.bg {
+    background-color: $primery
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap');
+$Heebo: 'Heebo',
+sans-serif;
+$Lato: 'Lato',
+sans-serif;
+$Roboto: 'Roboto',
+sans-serif;
+$Rubik: 'Rubik',
+sans-serif;
+
+
+p {
+    line-height: 25px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+i {
+    font-family: $Lato;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+@mixin Border-radious($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value !important;
+    -moz-border-radius: $value !important;
+    -ms-border-radius: $value !important;
+    -o-border-radius: $value !important;
+}
+
+@mixin transition($value) {
+    transition: $value !important;
+    -webkit-transition: $value !important;
+    -moz-transition: $value !important;
+    -ms-transition: $value !important;
+    -o-transition: $value !important;
+
+}
+
+@mixin transform-scale($value) {
+    transform: scale($value);
+    -webkit-transform: scale($value);
+    -moz-transform: scale($value);
+    -ms-transform: scale($value);
+    -o-transform: scale($value);
+}
+
+
+
+
+
+ul,
+li,
+a,
+p,
+span {
+    font-family: $Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: $Rubik;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-family: $Rubik;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+
+h3 {
+    font-family: $Rubik;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-family: $Rubik;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+button {
+    font-family: $Lato;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+ul {
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+// ====================================================
+//                  Desctop Header section
+// =================================================== 
+#manu:hover {
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+header {
+    .mobile-header{
+        display: none;
+        z-index: 100000;
+        background-color: #05050557;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        .manus-item{
+            display: flex;
+            flex-direction: column;
+          .close{
+              cursor: pointer;
+              i{
+                  color: $primery;
+              }
+          }  
+          background-color: whitesmoke;
+          width: 300px;
+          height: 100vh;
+          .navbar-nav {
+            position: relative;
+            text-transform: uppercase;
+
+
+          
+            .nav-item {
+                padding: 5px 10px;
+
+                .nav-link {
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: $primery !important;
+                    font-weight: 500;
+                    font-family: $Rubik;
+                    @include transition(.5s);
+                }
+
+                .active {
+                    color: $secondray !important;
+                    font-weight: 600;
+                    font-family: $Lato;
+                }
+
+                .nav-link:hover {
+                    color: $secondray !important;
+                }
+            }
+
+            .dropdown {
+                .dropdown-menu {
+                    @include Border-radious(0px);
+                    border: 1px solid transparent !important;
+
+                    .dropdown-item {
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        font-weight: bold;
+                        padding: 15px 20px;
+                        color: $primery !important;
+
+                    }
+
+                    .dropdown-item:hover {
+                        color: $secondray !important;
+                    }
+                }
+            }
+        }
+        }
+    }
+    nav {   
+        .head-icons{position: relative;
+                  margin-top: -40px;
+                  width: 100%;
+                 .search{
+                  margin-right: 10px;
+                
+                 }
+             }
+        background-color: transparent;
+        z-index: 10;
+
+        .navbar-nav {
+            position: relative;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+
+          
+            .nav-item {
+                padding: 5px 10px;
+
+                .nav-link {
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: $primery !important;
+                    font-weight: 500;
+                    font-family: $Rubik;
+                    @include transition(.5s);
+                }
+
+                .active {
+                    color: $secondray !important;
+                    font-weight: 600;
+                    font-family: $Lato;
+                }
+
+                .nav-link:hover {
+                    color: $secondray !important;
+                }
+            }
+
+            .dropdown {
+                .dropdown-menu {
+                    @include Border-radious(0px);
+                    border: 1px solid transparent !important;
+
+                    .dropdown-item {
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        font-weight: bold;
+                        padding: 15px 20px;
+                        color: $primery !important;
+
+                    }
+
+                    .dropdown-item:hover {
+                        color: $secondray !important;
+                    }
+                }
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+
+            i {
+                padding-left: 50px;
+                text-decoration: none;
+                font-size: 18px;
+                color: $primery;
+
+            }
+        }
+
+
+    }
+}
+// ===========================================================
+//              banner-crasoul
+// ===========================================================
+.banner {
+    margin-top: -80px;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-1 {
+        border: 1px solid transparent;
+        margin-right: 20px;
+        background-color: $primery;
+        padding: 10px 50px;
+        text-transform: uppercase;
+
+
+        @include transition(.5s);
+
+        a {
+            font-weight: 600;
+            font-size: 13px;
+            color: $secondray;
+            font-family: $Roboto;
+        }
+    }
+
+    .btn-1:hover {
+        border-color: $primery;
+        background-color: transparent;
+
+        a {
+            color: $primery;
+        }
+    }
+
+    .btn-2 {
+
+        margin-right: 20px;
+        background-color: $secondray;
+        padding: 10px 50px;
+        text-transform: uppercase;
+        @include transition(.5s);
+
+        a {
+            font-weight: 600;
+            font-size: 13px;
+            color: $primery;
+            font-family: $Roboto;
+        }
+    }
+
+    .btn-2:hover {
+
+        background-color: $primery;
+
+        a {
+            color: $secondray;
+        }
+    }
+}
+
+.banner-1 {
+    background-color: #002347ab;
+    background-blend-mode: darken;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    p {
+        a {
+            color: white;
+        }
+    }
+
+}
+
+.btn-1 {
+    border: 1px solid transparent;
+    background-color: $primery;
+    padding: 10px 50px;
+    text-transform: uppercase;
+
+
+    @include transition(.5s);
+
+    a {
+        font-weight: 600;
+        font-size: 13px;
+        color: $secondray;
+        font-family: $Roboto;
+    }
+}
+
+.btn-1:hover {
+    border-color: $primery;
+    background-color: transparent;
+
+    a {
+        color: $primery;
+    }
+}
+.line {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, #d9d9d92d 10%, #e6e6e68e 60%);
+
+    .sub-line {
+        width: 13%;
+        height: 2px;
+        background-color: #fdc632;
+    }
+}
+// ===========================================================
+//              main section
+// ===========================================================
+.Main-section {
+    .content-part {
+        overflow: hidden;
+
+        .sub-title {
+            margin-top: 25px;
+            color: #002347;
+        }
+
+        .line {
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(to right, #d9d9d92d 10%, #e6e6e68e 60%);
+
+            .sub-line {
+                width: 13%;
+                height: 2px;
+                background-color: #fdc632;
+            }
+        }
+
+        ul {
+            li { margin-top: 30px; 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    font-size: 17px;
+                }
+
+                a { @include transition(.5s);
+                    font-family:$Rubik;
+                    padding: 15px 50px;
+                    font-size: 14px;
+                    font-weight: 450;
+                    text-transform: uppercase;
+                }
+                a:hover{
+                    color: white;
+                    background-color: $secondray;
+                }
+
+            }
+        }
+
+    }
+    .side_bar{
+      ul{
+          li{ 
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .star{
+                position: absolute;
+                top: 0;
+                left: 30%;
+            }  
+          }
+
+      }   
+    }
+}
+
+
+footer {
+    margin-top: 100px;
+    padding: 100px 0px;
+    background-color: $primery;
+
+    ul {
+        li {
+            a {
+                display: block;
+                color: $text;
+                padding: 10px 0px;
+            }
+
+            a:hover {
+                color: $secondray;
+            }
+        }
+    }
+
+    form {
+
+        .form-control,
+        .input-group-text {
+            @include Border-radious(0px);
+            background-color: #ffffff21;
+            border: none;
+            font-weight: 600;
+        }
+
+        .input-group-text {
+            font-weight: 600;
+            font-size: 12px;
+            @include Border-radious(0px);
+            text-transform: uppercase;
+            background-color: $secondray !important;
+        }
+
+        .form-control::placeholder {
+            font-size: 13px;
+
+        }
+    }
+
+    .social {
+        margin-top: -30px;
+
+        .icon {
+            .item {
+                cursor: pointer;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include transition(.5s);
+                padding: 10px;
+                background-color: $secondray;
+
+                i {
+                    cursor: pointer;
+                    @include transition(.5s);
+                }
+            }
+
+            .item:hover {
+                background-color: white;
+
+                i {
+                    color: $secondray;
+                }
+            }
+        }
+    }
+}

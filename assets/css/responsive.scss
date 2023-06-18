@@ -1,0 +1,302 @@
+
+// ===========================================================
+//              Common Css
+// ===========================================================
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+
+// CSS rules to specify families
+
+//     font-family: 'Roboto', sans-serif;
+
+//     font-family: 'Rubik', sans-serif;
+$primery: #002347;
+$secondray: #fdc632;
+$text: #7b838a;
+
+.bg {
+    background-color: $primery
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap');
+$Heebo: 'Heebo',
+sans-serif;
+$Lato: 'Lato',
+sans-serif;
+$Roboto: 'Roboto',
+sans-serif;
+$Rubik: 'Rubik',
+sans-serif;
+
+
+p {
+    line-height: 25px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+i {
+    font-family: $Lato;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+@mixin Border-radious($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value !important;
+    -moz-border-radius: $value !important;
+    -ms-border-radius: $value !important;
+    -o-border-radius: $value !important;
+}
+
+@mixin transition($value) {
+    transition: $value !important;
+    -webkit-transition: $value !important;
+    -moz-transition: $value !important;
+    -ms-transition: $value !important;
+    -o-transition: $value !important;
+
+}
+
+@mixin transform-scale($value) {
+    transform: scale($value);
+    -webkit-transform: scale($value);
+    -moz-transform: scale($value);
+    -ms-transform: scale($value);
+    -o-transform: scale($value);
+}
+
+
+
+
+
+ul,
+li,
+a,
+p,
+span {
+    font-family: $Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: $Rubik;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-family: $Rubik;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+
+h3 {
+    font-family: $Rubik;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-family: $Rubik;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+button {
+    font-family: $Lato;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+ul {
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+// ====================================================
+//                  Desctop Header section
+// =================================================== 
+#manu:hover {
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+
+     .pages-turn{ 
+         p{
+                 font-size: 12px;
+             }
+         h4{
+            
+            font-size: 12px;
+         }
+     }
+    .regester{
+        margin-top: 150px;
+        padding: 150px 0px;
+        background-color: $primery;
+        .count{
+            
+           padding: 5px;
+            h2{ span{
+
+                text-align: center;
+            }
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .content{
+                @include Border-radious(10px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                padding: 35px 20px;
+                border: 2px dashed white;
+                background-color: rgba(255, 255, 255, 0.205);
+            }
+        }
+    }    
+
+    
+    
+    .banner{
+    padding: 20px;
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        margin-top: 100px;
+      font-size: 18px;
+    }
+}
+
+
+
+
+
+    .Event{
+        padding-top: 20px;
+        font-family: $Rubik;
+        margin-top: 80px;
+        background-color: #002347;
+        .card{
+            img{
+                height: 400px;
+            }
+            .btns {
+                font-size: 12px;
+                font-weight: 400;
+                padding: 8px 22px 8px 22px;
+
+            }
+            .containers-1{
+                height: auto;
+                width: 300px;
+                h2{
+                    font-size: 20px;
+                }
+                .line{
+                    margin-top: -10px;
+                    height: 40px;
+                    width: 2px;
+                    background-color: rgb(255, 255, 255);
+                }
+                p{
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                    
+                    
+                }
+                .icon{
+                    p{  
+                        font-size: 10px;
+                        padding: 0;
+                        
+                    }
+                }
+                padding: 10px;
+                width: 60%;
+                left: 40%;
+                i{
+                    margin-right: 10px;
+                    font-size: 13px;
+                }
+            }
+        
+        }
+        .card:hover{
+            img{
+                @include transform-scale(1.3);
+            }
+        }
+    
+        .eventsd{
+            padding: 100px 0px;
+        }
+       
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 990px)  {
+    .side_bar .card .input-group .input-group-text {
+
+        left: 92%;
+
+    }
+    .Event{
+       .card{
+        .containers-1{
+            left: 50%;
+        }
+       }
+    }
+}
+
+.owl-nav{
+    display: none !important;
+}
+
+.form-control:focus{
+  outline: 0px solid !important;
+  
+}  
+

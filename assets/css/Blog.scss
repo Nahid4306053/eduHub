@@ -1,0 +1,910 @@
+// ===========================================================
+//              Common Css
+// ===========================================================
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+
+// CSS rules to specify families
+
+//     font-family: 'Roboto', sans-serif;
+
+//     font-family: 'Rubik', sans-serif;
+$primery: #002347;
+$secondray: #fdc632;
+$text: #7b838a;
+
+.bg {
+    background-color: $primery
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap');
+$Heebo: 'Heebo',
+sans-serif;
+$Lato: 'Lato',
+sans-serif;
+$Roboto: 'Roboto',
+sans-serif;
+$Rubik: 'Rubik',
+sans-serif;
+
+
+p {
+    line-height: 25px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+i {
+    font-family: $Lato;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+section{
+    padding: 20px;
+    overflow-x:hidden ;
+}
+
+@mixin Border-radious($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value !important;
+    -moz-border-radius: $value !important;
+    -ms-border-radius: $value !important;
+    -o-border-radius: $value !important;
+}
+
+@mixin transition($value) {
+    transition: $value !important;
+    -webkit-transition: $value !important;
+    -moz-transition: $value !important;
+    -ms-transition: $value !important;
+    -o-transition: $value !important;
+
+}
+
+@mixin transform-scale($value) {
+    transform: scale($value);
+    -webkit-transform: scale($value);
+    -moz-transform: scale($value);
+    -ms-transform: scale($value);
+    -o-transform: scale($value);
+}
+
+
+
+
+
+ul,
+li,
+a,
+p,
+span {
+    font-family: $Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: $Rubik;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-family: $Rubik;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+
+h3 {
+    font-family: $Rubik;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-family: $Rubik;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+button {
+    font-family: $Lato;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+ul {
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+// ====================================================
+//                  Desctop Header section
+// =================================================== 
+#manu:hover {
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+header {
+    .mobile-header{
+        display: none;
+        z-index: 100000;
+        background-color: #05050557;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        .manus-item{
+            display: flex;
+            flex-direction: column;
+          .close{
+              cursor: pointer;
+              i{
+                  color: $primery;
+              }
+          }  
+          background-color: whitesmoke;
+          width: 300px;
+          height: 100vh;
+          .navbar-nav {
+            position: relative;
+            text-transform: uppercase;
+
+
+          
+            .nav-item {
+                padding: 5px 10px;
+
+                .nav-link {
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: $primery !important;
+                    font-weight: 500;
+                    font-family: $Rubik;
+                    @include transition(.5s);
+                }
+
+                .active {
+                    color: $secondray !important;
+                    font-weight: 600;
+                    font-family: $Lato;
+                }
+
+                .nav-link:hover {
+                    color: $secondray !important;
+                }
+            }
+
+            .dropdown {
+                .dropdown-menu {
+                    @include Border-radious(0px);
+                    border: 1px solid transparent !important;
+
+                    .dropdown-item {
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        font-weight: bold;
+                        padding: 15px 20px;
+                        color: $primery !important;
+
+                    }
+
+                    .dropdown-item:hover {
+                        color: $secondray !important;
+                    }
+                }
+            }
+        }
+        }
+    }
+    nav {   
+        .head-icons{position: relative;
+                  margin-top: -40px;
+                  width: 100%;
+                 .search{
+                  margin-right: 10px;
+                
+                 }
+             }
+        background-color: transparent;
+        z-index: 10;
+
+        .navbar-nav {
+            position: relative;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+
+          
+            .nav-item {
+                padding: 5px 10px;
+
+                .nav-link {
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: $primery !important;
+                    font-weight: 500;
+                    font-family: $Rubik;
+                    @include transition(.5s);
+                }
+
+                .active {
+                    color: $secondray !important;
+                    font-weight: 600;
+                    font-family: $Lato;
+                }
+
+                .nav-link:hover {
+                    color: $secondray !important;
+                }
+            }
+
+            .dropdown {
+                .dropdown-menu {
+                    @include Border-radious(0px);
+                    border: 1px solid transparent !important;
+
+                    .dropdown-item {
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        font-weight: bold;
+                        padding: 15px 20px;
+                        color: $primery !important;
+
+                    }
+
+                    .dropdown-item:hover {
+                        color: $secondray !important;
+                    }
+                }
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+
+            i {
+                padding-left: 50px;
+                text-decoration: none;
+                font-size: 18px;
+                color: $primery;
+
+            }
+        }
+
+
+    }
+}
+
+// ===========================================================
+//              banner-crasoul
+// ===========================================================
+.banner {
+    margin-top: -80px;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-1 {
+        border: 1px solid transparent;
+        margin-right: 20px;
+        background-color: $primery;
+        padding: 10px 50px;
+        text-transform: uppercase;
+
+
+        @include transition(.5s);
+
+        a {
+            font-weight: 600;
+            font-size: 13px;
+            color: $secondray;
+            font-family: $Roboto;
+        }
+    }
+
+    .btn-1:hover {
+        border-color: $primery;
+        background-color: transparent;
+
+        a {
+            color: $primery;
+        }
+    }
+
+    .btn-2 {
+
+        margin-right: 20px;
+        background-color: $secondray;
+        padding: 10px 50px;
+        text-transform: uppercase;
+        @include transition(.5s);
+
+        a {
+            font-weight: 600;
+            font-size: 13px;
+            color: $primery;
+            font-family: $Roboto;
+        }
+    }
+
+    .btn-2:hover {
+
+        background-color: $primery;
+
+        a {
+            color: $secondray;
+        }
+    }
+}
+
+.banner-1 {
+    background-color: #002347ab;
+    background-blend-mode: darken;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    p {
+        a {
+            color: white;
+        }
+    }
+
+}
+// ====================================================
+//                  Desctop Feature section
+// =================================================== 
+
+.content-part {
+    .info {
+        ul { font-size: 14px;
+            text-align: right;
+            padding: 0;
+            li {  
+                p {font-size: 14px;
+                    line-height: 25px;
+                    a {font-size: 14px;
+                       color: #002347;
+                       cursor: pointer;
+                    }
+                    a:hover{
+                        color: #fdc632;
+                    }
+                    .active{font-size: 14px;
+                        cursor: pointer;
+                        color: #fdc632;
+                    }
+                    .active:hover{
+                     color: #fdc632;
+                    }
+                }
+            }
+            .infos{
+                margin-top: 15px;
+                a {font-size: 14px;
+                    color: #7b838a;
+                    cursor: pointer;
+                 }
+                 a:hover{
+                     color: #fdc632;
+                 }
+                 i{  margin-left: 10px; 
+                     font-size: 19px;
+                     cursor: pointer;
+                     color: #002347;
+                 }
+                 
+            }
+            .infos:hover{
+                a{
+                    color: #fdc632;
+                } 
+            }
+        }
+    }
+    .content-part-2{
+      h3{
+          a{  @include transition(.5s);
+              display: block;
+              margin-top: 20px;
+              font-weight: 600;
+              font-size: 25px;
+              color: $primery;
+          }
+          a:hover{
+              color: $secondray;
+          }
+      } 
+      button{
+          @include transition(.5s);
+          border: 0px;
+          border: 1px solid transparent;
+          background-color: $primery;
+          padding: 10px 30px;
+          a{
+            @include transition(.5s);
+           font-size: 14px;
+           color: $secondray;
+           font-weight: 600;
+          }
+      }
+      button:hover{
+       background-color: transparent;
+       border-color:$primery ;
+       a{
+         color: $primery;
+       }
+      } 
+    }
+  
+   
+    .media{@include transition(.5s);
+        .pages{
+            position: relative;
+            .ico-arow{
+                opacity: 0.1;
+                @include transition(.5s);
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.541);
+                i{
+                  font-size: 50px;
+                  font-weight: 100;
+                  font-family: $Rubik;
+                  opacity: .5;
+                }
+            }
+        }
+    }
+    .media:hover{
+        .pages{
+           .ico-arow{
+            opacity: 0.9;
+           }
+        }
+    }
+    .comment{
+        ul{ 
+            li{ 
+                
+               .come{
+                  
+                align-items: center;
+                justify-content: space-between;
+                display: flex;
+                .Replay{
+                                        @include transition(.5s);
+                    color: #002347;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 800;
+                    font-family: $Roboto; 
+                    padding: 5px 10px;
+                }
+                .Replay:hover{
+                    color: #ffffff;
+                    background-color:#002347;
+                    text-transform: uppercase;
+                   
+                } 
+               }
+                
+            }
+        }
+       
+    }
+    .comment-2{
+      display: block;
+      background-color: white;
+      padding: 80px;
+      input,textarea,select{
+          border: 1px solid rgb(228, 228, 228);
+          margin-top: 15px;
+          padding-bottom: 20px;
+          @include Border-radious(0px);
+        
+      }
+      input::placeholder, textarea::placeholder{
+        color: $text;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      input:focus, textarea:focus{
+        outline: 0px solid transparent;
+    }
+
+
+    
+    .btn-2 {
+
+        margin-right: 20px;
+        background-color: $secondray;
+        padding: 10px 50px;
+        text-transform: uppercase;
+        @include transition(.5s);
+            font-weight: 600;
+            font-size: 12px;
+            color: $primery;
+            font-family: $Roboto;
+        
+    }
+
+    .btn-2:hover {
+        background-color: $primery;
+        color: $secondray;
+       
+    }
+    
+     
+    }
+  
+} 
+.pagination{
+       
+        @include Border-radious(0px);
+        .page-item{
+           
+        .page-link{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            padding: 10px 15px;
+            @include transition(.5s);
+            background-color: $secondray !important;
+            border: none !important;
+            @include Border-radious(0px);
+            background-color: white !important; 
+            i{  
+                color: $text;
+                font-size: 20px;
+                
+            }
+        }
+        .page-link:hover{
+           color: white;
+            background-color: $secondray !important;
+        }
+        .active{
+            font-weight: 600;
+            padding: 10px 15px;
+            @include transition(.5s);
+            border: none !important;
+            @include Border-radious(0px);
+            color: white;
+            background-color: $secondray !important;
+        }
+
+        }
+    }
+
+    .side_bar{
+        .card{
+            p{
+                text-align: inherit
+            }
+            .input-group{
+            @include Border-radious(0px);
+            .form-control{
+                width: 100%;
+                @include Border-radious(100px);  
+                background-color: $primery;
+                padding: 10px 30px; 
+                color: white;
+            }
+            .form-control:focus{
+                outline: 1px solid transparent;
+                
+            }.form-control::placeholder{
+               color: white;
+                
+            }
+            .input-group-text{
+               
+                border: none;
+                position: absolute;
+                padding: 14px 20px;
+                left: 82%;
+                top: 0;
+                z-index: 111;
+                background-color: #002347;
+                @include Border-radious(100px); 
+            }
+            }
+            text-align: center;
+            p{
+                font-size: 17px;
+                color: #0023478f;
+            }
+            border: 1px solid !important;
+            @include Border-radious(0px);
+            @include transition(.5s);
+            .social-icons{
+              i{ @include transition(.5s);
+                color: #002347;
+                padding: 0px 10px;
+              }
+              i:hover{
+                  color: $secondray;
+              }
+            }
+        }
+        .media-body{
+            p{a{@include transition(.5s);
+                color:$primery;
+                font-weight: 600;
+                 font-size: 14px;
+                 
+                }
+           a:hover{
+                     color: $secondray;
+                 } 
+        }
+        }
+
+        ul{ 
+            
+            li{ cursor: pointer;
+                @include transition(.5s);
+                margin-top: 25px;
+                border-bottom: 2px dotted rgba(0, 0, 0, 0);
+                display: flex;
+                justify-content: space-between;
+               p{@include transition(.5s);
+                font-size: 14px;
+               } 
+               a{@include transition(.5s);
+                font-size: 14px;
+               }
+            }
+            li:hover{
+                border-bottom: 2px dotted $secondray;
+               p,a{
+                color:$secondray;
+               } 
+               
+            }
+
+        }
+        .feed-back{
+            p{  font-weight: 600;
+                color: #00234780
+            }
+            .input-group{
+                @include Border-radious(0px);
+                .form-control{
+                    @include Border-radious(0px);  
+                    padding: 10px 30px; 
+                    color: $text;
+                    border: none ;
+                    
+                }
+                .form-control:focus{
+                    outline: 1px solid transparent;
+                    
+                }.form-control::placeholder{
+                   color: $text;
+                   font-size: 13px;
+                    
+                }
+                .input-group-text{
+                    border: none;
+                    @include Border-radious(0px);
+                    padding: 10px 20px ;
+                    font-size: 13px; 
+                }
+                }
+                .tags{
+                    .tagses{
+                        
+                        span{ 
+                            cursor: pointer;
+                            display: inline-block;
+                            margin-top: 5px;
+                            font-size: 14px;
+                            color: #002347;
+                            font-weight: 600;
+                            padding: 10px 20px;
+                            
+                        }
+                        span:hover{
+                            background-color: $primery;
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+        }
+    }
+
+    .contact{
+        .comment-2{
+            display: block;
+            background-color: white;
+            padding: 80px;
+            input,textarea,select{
+                border: 1px solid rgb(228, 228, 228);
+                margin-top: 15px;
+                padding-bottom: 20px;
+                @include Border-radious(0px);
+              
+            }
+            input::placeholder, textarea::placeholder{
+              color: $primery;
+              font-size: 14px;
+              font-weight: 600;
+            }
+            input:focus, textarea:focus{
+              outline: 0px solid transparent;
+          }
+      
+      
+          
+          .btn-2 {
+      
+              margin-right: 20px;
+              background-color: $secondray;
+              padding: 10px 50px;
+              text-transform: uppercase;
+              @include transition(.5s);
+                  font-weight: 600;
+                  font-size: 12px;
+                  color: $primery;
+                  font-family: $Roboto;
+              
+          }
+      
+          .btn-2:hover {
+              background-color: $primery;
+              color: $secondray;
+             
+          }
+          
+           
+          } 
+    }
+// ====================================================
+//                  Desctop Course section
+// =================================================== 
+
+
+
+
+// ====================================================
+//                  Desctop Header section
+// =================================================== 
+
+
+
+// ====================================================
+//                  Desctop Team section
+// =================================================== 
+
+// ====================================================
+//                  Desctop Event section
+// =================================================== 
+
+// ====================================================
+//                  Desctop Event section
+// =================================================== 
+
+footer {
+    margin-top: 100px;
+    padding: 100px 0px;
+    background-color: $primery;
+
+    ul {
+        li {
+            a {
+                display: block;
+                color: $text;
+                padding: 10px 0px;
+            }
+
+            a:hover {
+                color: $secondray;
+            }
+        }
+    }
+
+    form {
+
+        .form-control,
+        .input-group-text {
+            @include Border-radious(0px);
+            background-color: #ffffff21;
+            border: none;
+            font-weight: 600;
+        }
+
+        .input-group-text {
+            font-weight: 600;
+            font-size: 12px;
+            @include Border-radious(0px);
+            text-transform: uppercase;
+            background-color: $secondray !important;
+        }
+
+        .form-control::placeholder {
+            font-size: 13px;
+
+        }
+    }
+
+    .social {
+        margin-top: -30px;
+
+        .icon {
+            .item {
+
+                cursor: pointer;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include transition(.5s);
+                padding: 10px;
+                background-color: $secondray;
+
+                i {
+                    cursor: pointer;
+                    @include transition(.5s);
+                }
+            }
+
+            .item:hover {
+                background-color: white;
+
+                i {
+                    color: $secondray;
+                }
+            }
+        }
+    }
+}
