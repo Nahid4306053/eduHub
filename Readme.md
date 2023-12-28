@@ -6,9 +6,9 @@ EduHub is a responsive educational-based web design aimed at providing users wit
 
 ## Live Website Preview
 
-[![Project Screenshot](https://github.com/Nahid4306053/nahid-eshomazv2-client/blob/main/public/full_web_preview.jpg)](https://eshomaz.netlify.app/)
+[![Project Screenshot](https://github.com/Nahid4306053/eduHub/blob/main/img/full_web_preview.jpg)](https://eduhubv2.netlify.app/)
 
-[Click to View Live Website](https://eshomaz.netlify.app/)
+[Click to View Live Website](https://eduhubv2.netlify.app/)
 
 
 ## Features
