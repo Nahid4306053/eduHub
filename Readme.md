@@ -4,6 +4,13 @@
 
 EduHub is a responsive educational-based web design aimed at providing users with a seamless experience in exploring courses, enrolling, and engaging in a rich educational environment. The platform offers a course overview, detailed module-based information, a review system, and a user-friendly course enrollment form. Additionally, it features a countdown timer for upcoming course offerings and a blog page providing valuable course-related guides.
 
+## Live Website Preview
+
+[![Project Screenshot](https://github.com/Nahid4306053/nahid-eshomazv2-client/blob/main/public/full_web_preview.jpg)](https://eshomaz.netlify.app/)
+
+[Click to View Live Website](https://eshomaz.netlify.app/)
+
+
 ## Features
 
 ### 1. Course Overview
